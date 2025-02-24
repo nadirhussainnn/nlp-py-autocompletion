@@ -120,7 +120,37 @@ The experiments show significant insights into different model architectures and
 - 512-dimensional embedding and hidden layers showed optimal results
 - Medium-sized datasets with sophisticated tokenization strategies more effective than larger datasets with simpler approaches
 
-## Code Attribution
+## 7. Setup and Execution Instructions
+##### Setting up training
+We provide different versions of source code in this repo
+
+- SentencePiece500-LSTM
+- SentencePiece100K-LSTM
+- Custom-LSTM
+
+For Custom-LSTM and SentencePiece100K-LSTM, ensure you have a data folder containing the complete dataset. The dataset can be downloaded from [Py150 Dataset][1].
+
+<div align="center">
+  <img src="structure.png" alt="Project folder structure">
+  <p><em>Figure 5: Project folder structure showing key files and directories</em></p>
+</div>
+
+Some models were trained directly on Google Colab:
+
+https://colab.research.google.com/drive/17OFBm209293CkQC-KswJZO19_CVcIZ0o?usp=sharing
+
+#### Execution/Inference
+For testing or execution of trained models:
+
+Open this Google Colab Notebook, Run the cells to load saved models and their configurations
+
+https://colab.research.google.com/drive/1ZfokjtGddSwZSEbt7J-oCqlxsPjjicCC?usp=sharing
+
+
+
+
+
+## 8. Code Attribution
 
 Parts of code adapted from external sources:
 - Custom tokenizer: Built with help from ChatGPT and documentation [2]
@@ -130,7 +160,12 @@ Parts of code adapted from external sources:
 
 ## References
 
-[1]: https://www.sri.inf.ethz.ch/py150  
-[2]: https://docs.python.org/3/library/re.html#functions  
-[3]: https://aclanthology.org/D18-2012.pdf  
+[1]: https://www.sri.inf.ethz.ch/py150
+[2]: https://docs.python.org/3/library/re.html#functions 
+[3]: https://aclanthology.org/D18-2012.pdf
 [4]: https://github.com/fpinell/mlsa/blob/main/notebooks/Lecture_4_Deep_Learning_RNN.ipynb
+
+[Py150 Dataset][1]  
+[Python Regular Expressions Documentation][2]  
+[SentencePiece Paper][3]  
+[Deep Learning RNN Lecture Notebook][4]
