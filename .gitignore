@@ -1,0 +1,8 @@
+.myenv
+./myenv
+myenv/*
+
+./Custom-LSTM/data/
+./Custom-LSTM/data/*
+./Custom-LSTM/data
+Custom-LSTM/data/
